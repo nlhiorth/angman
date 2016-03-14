@@ -1,5 +1,3 @@
-
-
 public class RandomWordGenerator {
 
     static String[] words = { "computer", "programmer",

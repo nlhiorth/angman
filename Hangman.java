@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class Hangman {
@@ -59,6 +57,3 @@ public class Hangman {
         }
     }
 }
-
-
-

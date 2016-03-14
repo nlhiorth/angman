@@ -1,5 +1,3 @@
-
-
 public class Scores implements Comparable<Scores> {
     private String name;
     private int misses;

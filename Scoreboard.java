@@ -1,5 +1,3 @@
-
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -32,7 +30,7 @@ public class Scoreboard {
                 sc.add(new Scores(score[0], Integer.parseInt(score[1])));
             }
         } catch (FileNotFoundException f) {
-            System.out.println("The file containing the scoreboard could not be found.");
+            System.err.println("The file containing the scoreboard could not be found.");
         }
     }
 
@@ -52,10 +50,10 @@ public class Scoreboard {
     public void updateScoreboard(String name, int misses) {
         sc.add(new Scores(name, misses));
         Collections.sort(sc);
-        close();
+        writeAndClose();
     }
 
-    private void close() {
+    private void writeAndClose() {
         try {
             File f = new File("scoreboard.txt");
             FileWriter fw = new FileWriter(f);

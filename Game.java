@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class Game {
@@ -23,7 +21,7 @@ public class Game {
 			case "restart" : newGame();
 				System.out.println("New word, new possibilities."); return true;
 			case "top" : sc.printScoreboard(); return true;
-			case "exit" : System.exit(1); return true;
+			case "exit" : System.exit(0); return true;
 			case "help" : revealChar(); return true;
 			default : return false;
 		}
